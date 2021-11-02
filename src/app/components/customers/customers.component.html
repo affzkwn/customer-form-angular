@@ -1,0 +1,5 @@
+<app-add-customer (onAddCust)="addCust($event)"></app-add-customer>
+<app-customer-detail
+*ngFor="let customer of customers"
+[customer]="customer" (onDeleteForm)="onDelete(customer)">
+</app-customer-detail>

@@ -1,0 +1,16 @@
+<form class="add-form" (ngSubmit)="onSubmit">
+  <div class="form-control">
+    <label for="firstName" >First Name</label>
+    <input type="text" name="firstName" [(ngModel)]="firstName" id="firstName" placeholder="First Name">
+  </div>
+  <div class="form-control">
+    <label for="lastName" >Last Name</label>
+    <input type="text" name="lastName" [(ngModel)]="lastName" id="lastName" placeholder="Last Name">
+  </div>
+  <div class="form-control">
+    <label for="email" > Email </label>
+    <input type="text" name="email" [(ngModel)]="email" id="email" placeholder="Email">
+  </div>
+<input type="submit" value="Submit" class="btn btn-block" style="background-color: green;" />
+<!--<input type="" value="Clear Form" class="btn btn-block" style="background-color: rgb(107, 105, 105);" />-->
+</form>
