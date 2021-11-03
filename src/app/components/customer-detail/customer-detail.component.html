@@ -1,10 +1,9 @@
 <div class="cust">
-  <h3>{{ customer.firstName }}
+  <h3>{{ customer.firstName }} {{ customer.lastName }}
     <fa-icon (click)="onDelete(customer)"
     [ngStyle]="{color: 'red'}"
     [icon]="faTimes">
   </fa-icon>
   </h3>
-  <p>{{ customer.lastName }}</p>
   <p>{{ customer.email }}</p>
 </div>
