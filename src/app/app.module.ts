@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule  } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,7 +11,6 @@ import { ButtonComponent } from './components/button/button.component';
 import { BodyComponent } from './components/body/body.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { CustomerDetailComponent } from './components/customer-detail/customer-detail.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddCustomerComponent } from './components/add-customer/add-customer.component';
 
 @NgModule({

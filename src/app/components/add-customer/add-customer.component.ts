@@ -8,6 +8,8 @@ import { Customer } from 'src/app/customer';
 })
 export class AddCustomerComponent implements OnInit {
   @Output() onAddCust: EventEmitter<Customer> = new EventEmitter();
+  @Output() onDeleteForm: EventEmitter<Customer> = new EventEmitter();
+
   firstName!: string;
   lastName!: string;
   email!: string;
@@ -15,6 +17,11 @@ export class AddCustomerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onDelete(customer: Customer){
+    console.log(234);
+    this.onDeleteForm.emit(customer);
   }
 
   onSubmit() {

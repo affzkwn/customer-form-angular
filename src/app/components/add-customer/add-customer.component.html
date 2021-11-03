@@ -1,4 +1,4 @@
-<form class="add-form" (ngSubmit)="onSubmit">
+<form class="add-form" (ngSubmit)="onSubmit()">
   <div class="form-control">
     <label for="firstName" >First Name</label>
     <input type="text" name="firstName" [(ngModel)]="firstName" id="firstName" placeholder="First Name">
@@ -12,5 +12,5 @@
     <input type="text" name="email" [(ngModel)]="email" id="email" placeholder="Email">
   </div>
 <input type="submit" value="Submit" class="btn btn-block" style="background-color: green;" />
-<!--<input type="" value="Clear Form" class="btn btn-block" style="background-color: rgb(107, 105, 105);" />-->
+<input type="button" (click)="onDelete" value="Clear Form" class="btn btn-block" style="background-color: rgb(95, 97, 95);"/>
 </form>

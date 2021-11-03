@@ -21,12 +21,11 @@ export class CustomersComponent implements OnInit {
 
   onDelete (customer: Customer) {
     this.customerService.onDelete(customer).subscribe(() => (this.customers = this.customers.filter(t => t.id !== customer.id)));
-    console.log(123);
+
   }
 
   addCust( customer : Customer ) {
-    console.log(customer);
-    //this.customerService.addCust(customer).subscribe((customer) => (this.customers.push(customer)));
+    this.customerService.addCust(customer).subscribe((customer) => (this.customers.push(customer)));
   }
 
 }
