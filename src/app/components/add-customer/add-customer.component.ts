@@ -20,7 +20,6 @@ export class AddCustomerComponent implements OnInit {
   }
 
   onDelete(customer: Customer){
-    console.log(234);
     this.onDeleteForm.emit(customer);
   }
 
