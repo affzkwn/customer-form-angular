@@ -9,5 +9,6 @@
     <input type="text" name="email" [(ngModel)]="email" id="email" placeholder="example@example.com">
   </div>
 <input type="submit" value="Submit" class="btn btn-block" style="background-color: green;" />
-<input type="button" (click)="onDelete" value="Clear Form" class="btn btn-block" style="background-color: rgb(95, 97, 95);"/>
+<button type="button" (click)="onDelete(customer)" value="Clear Form" class="btn btn-block" style="background-color: rgb(95, 97, 95);">Clear Form</button>
+
 </form>

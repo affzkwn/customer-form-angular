@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Customer } from 'src/app/customer';
 
 @Component({
@@ -7,6 +7,7 @@ import { Customer } from 'src/app/customer';
   styleUrls: ['./add-customer.component.css']
 })
 export class AddCustomerComponent implements OnInit {
+  @Input() customer !: Customer;
   @Output() onAddCust: EventEmitter<Customer> = new EventEmitter();
   @Output() onDeleteForm: EventEmitter<Customer> = new EventEmitter();
 
@@ -36,6 +37,7 @@ export class AddCustomerComponent implements OnInit {
     }
 
     this.onAddCust.emit(newCust);
+    console.log({ newCust });
 
     this.firstName='';
     this.lastName='';
