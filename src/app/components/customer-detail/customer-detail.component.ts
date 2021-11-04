@@ -18,7 +18,10 @@ export class CustomerDetailComponent implements OnInit {
   ngOnInit(): void {}
 
   onDelete(customer: Customer){
+
     this.onDeleteForm.emit(customer);
+    console.log({ firstName:'',lastName:'',email:'', });
+
   }
 
 }

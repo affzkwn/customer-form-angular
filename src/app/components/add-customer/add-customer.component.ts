@@ -20,8 +20,16 @@ export class AddCustomerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onDelete(customer: Customer){
-    this.onDeleteForm.emit(customer);
+  onReset(){
+
+    const empField={
+      firstName:'',
+      lastName:'',
+      email:''
+    }
+
+    console.log( empField );
+
   }
 
   onSubmit() {
@@ -39,9 +47,7 @@ export class AddCustomerComponent implements OnInit {
     this.onAddCust.emit(newCust);
     console.log({ newCust });
 
-    this.firstName='';
-    this.lastName='';
-    this.email='';
+
   }
 
 }
