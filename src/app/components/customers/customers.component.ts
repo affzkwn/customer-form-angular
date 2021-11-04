@@ -19,7 +19,7 @@ export class CustomersComponent implements OnInit {
    this.customerService.getCustomers().subscribe((customers) => this.customers = customers);
   }
 
-  onDelete (customer: Customer) {
+  onDeleteForm (customer: Customer) {
     this.customerService.onDelete(customer).subscribe(() => (this.customers = this.customers.filter(t => t.id !== customer.id)));
   }
 

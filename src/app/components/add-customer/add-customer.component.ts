@@ -20,18 +20,6 @@ export class AddCustomerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onDelete(){
-
-    const empField={
-      firstName:'',
-      lastName:'',
-      email:''
-    }
-
-    console.log( empField );
-
-  }
-
   onSubmit() {
     if(!this.firstName){
       alert('Please Add Your First Name!');
