@@ -1,4 +1,4 @@
-<form class="add-form" (ngSubmit)="onSubmit()" (ng-click)="onReset()">
+<form class="add-form" (ngSubmit)="onSubmit()" (ng-click)="onDelete()">
   <div class="form-control">
     <label for="fullName" >Full Name</label>
     <input type="text" name="firstName" [(ngModel)]="firstName" id="firstName" placeholder="First Name" style="width: 47%">
@@ -10,5 +10,4 @@
   </div>
 <input type="submit" value="Submit" class="btn btn-block" style="background-color: green;" />
 <button type="reset" class="btn btn-block" style="background-color: rgb(95, 97, 95);">Clear Form</button>
-
 </form>

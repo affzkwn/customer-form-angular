@@ -20,7 +20,7 @@ export class CustomerDetailComponent implements OnInit {
   onDelete(customer: Customer){
 
     this.onDeleteForm.emit(customer);
-    console.log({ firstName:'',lastName:'',email:'', });
+    console.log("Data Deleted");
 
   }
 

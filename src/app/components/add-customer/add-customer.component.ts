@@ -20,7 +20,7 @@ export class AddCustomerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onReset(){
+  onDelete(){
 
     const empField={
       firstName:'',
